@@ -1,0 +1,9 @@
+{
+  "name": "blog-server",
+  "version": "1.0.0",
+  "description": "博客server部分",
+  "main": "index.js",
+  "repository": "https://github.com/dt009/blog-server.git",
+  "author": "dt009 <18363625031@163.com>",
+  "license": "MIT"
+}
