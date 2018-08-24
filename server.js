@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 11:26:10
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-08-24 11:50:14
+ * @Last Modified time: 2018-08-24 14:36:02
  */
 
 // node 原生模块引入
@@ -19,10 +19,37 @@ const static = require('koa-static');
 const bodyparser = require('koa-bodyparser');
 const cors = require('koa2-cors');
 const config = require('./config/config');
-
+const MysqlStore = require('koa-mysql-session');
+const session = require('koa-session-minimal');
 
 // 实例化 服务 koa
 const app = new Koa();
+
+
+// 数据库
+const createTable = require('./sql/createTable/createTable');
+createTable();
+
+/**
+ * @description session 的储存配置
+ *
+ */
+const sessionMysqlConfig = {
+    user: config.database.USERNAME,
+    password: config.database.PASSWORD,
+    database: config.database.DATABASE,
+    host: config.database.HOST
+};
+
+
+/**
+ * @description 配置 session 中间件
+ *
+ */
+app.use(session({
+    key: 'USER_SID',
+    store: new MysqlStore(sessionMysqlConfig)
+}));
 
 /**
  * @description cors 设置 仅限开发时使用 发布时需要注释
@@ -70,6 +97,7 @@ app.use(bodyparser());
 app.use(require('./router/index').routes());
 
 
+// 监听端口号
 app.listen(config.serverPort);
 
 console.log('服务启动: http://localhost:' + config.serverPort);
