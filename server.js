@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 11:26:10
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-08-24 14:36:02
+ * @Last Modified time: 2018-08-26 17:51:56
  */
 
 // node 原生模块引入
@@ -96,6 +96,7 @@ app.use(bodyparser());
 
 app.use(require('./router/index').routes());
 
+module.exports = app;
 
 // 监听端口号
 app.listen(config.serverPort);
