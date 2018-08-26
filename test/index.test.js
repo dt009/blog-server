@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-26 17:51:16
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-08-26 18:38:25
+ * @Last Modified time: 2018-08-26 21:27:43
  */
 
 const supertest = require('supertest');
@@ -20,11 +20,12 @@ describe('测试请求接口', () => {
     it('测试 login 接口', done => {
         request
             .post('/login')
-            .send({name: 'dt009', pass:  'Iamdt009'})
+            .send({user: 'dt009', pass:  'Iamdt009'})
             .expect(200)
             .end((err, res) => {
                 // 断言判断结果为 object 类型
                 expect(res.body).to.be.an('object');
+                expect(res.body.status).to.be.equal('ok')
                 done();
             })
     });
