@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 14:20:03
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-08-24 19:11:17
+ * @Last Modified time: 2018-08-27 23:55:21
  */
 
 const query = require('../utils/query');
@@ -35,13 +35,26 @@ const createTable = () => {
     let createUserSql =
         `create table if not exists users(
             id INT NOT NULL AUTO_INCREMENT,
-            name VARCHAR(100) NOT NULL,
+            user VARCHAR(100) NOT NULL,
             pass VARCHAR(100) NOT NULL,
             avatar VARCHAR(100) NOT NULL,
             moment VARCHAR(100) NOT NULL,
             PRIMARY KEY ( id )
         )`;
     query(createUserSql);
+
+    // 创建 路由 表
+    let createRouterSql =
+        `create table if not exists router(
+            id INT NOT NULL AUTO_INCREMENT,
+            name VARCHAR(100) NOT NULL,
+            path VARCHAR(100) NOT NULL,
+            label VARCHAR(100) NOT NULL,
+            icon VARCHAR(100),
+            PRIMARY KEY ( id )
+        )`;
+
+    query(createRouterSql);
 }
 
 module.exports = createTable;
