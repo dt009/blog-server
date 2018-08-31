@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 14:20:03
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-08-27 23:55:21
+ * @Last Modified time: 2018-08-31 11:12:11
  */
 
 const query = require('../utils/query');
@@ -50,6 +50,7 @@ const createTable = () => {
             name VARCHAR(100) NOT NULL,
             path VARCHAR(100) NOT NULL,
             label VARCHAR(100) NOT NULL,
+            type VARCHAR(100) NOT NULL,
             icon VARCHAR(100),
             PRIMARY KEY ( id )
         )`;

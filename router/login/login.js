@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 19:12:25
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-08-28 00:08:33
+ * @Last Modified time: 2018-08-31 09:39:51
  */
 
 const Router = require('koa-router');
@@ -13,6 +13,8 @@ const getUserInfo = require('../../sql/users/getUserInfo');
 const router = new Router();
 
 router.post('/login', async ctx => {
+
+    console.log(ctx.session);
 
     let postData = ctx.request.body;
 
@@ -25,14 +27,19 @@ router.post('/login', async ctx => {
         if (userInfo.length === 1) {
 
             if (user === userInfo[0].user && pass === userInfo[0].pass) {
-                userInfo.isLogin = true;
+
+                userInfo[0].isLogin = true;
+                let session = ctx.session;
+                session.isLogin = true;
+                session.user = userInfo[0].user;
+                session.id = userInfo[0].id;
+
                 ctx.body = resUtil('ok', '成功', userInfo[0]);
             }
             else {
                 userInfo.isLogin = false;
                 ctx.body = resUtil('fail', '用户名或密码错误', userInfo[0]);
             }
-
         }
         else {
             userInfo.isLogin = false;
