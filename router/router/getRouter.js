@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-27 20:49:31
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-08-28 00:25:39
+ * @Last Modified time: 2018-09-04 12:23:32
  */
 
 const Router = require('koa-router');
@@ -21,7 +21,7 @@ router.post('/allRouter', async ctx => {
         ctx.body = resUtil('ok', '请求成功', data);
     }
     else {
-        ctx.body = resUtil('fail', '请求失败, 请检查', []);
+        ctx.body = resUtil('ok', '请求成功', []);
     }
 })
 
