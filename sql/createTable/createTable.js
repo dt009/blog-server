@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 14:20:03
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-08-31 11:12:11
+ * @Last Modified time: 2018-09-05 10:27:51
  */
 
 const query = require('../utils/query');
@@ -47,9 +47,9 @@ const createTable = () => {
     let createRouterSql =
         `create table if not exists router(
             id INT NOT NULL AUTO_INCREMENT,
-            name VARCHAR(100) NOT NULL,
-            path VARCHAR(100) NOT NULL,
-            label VARCHAR(100) NOT NULL,
+            name VARCHAR(100) NOT NULL UNIQUE KEY,
+            path VARCHAR(100) NOT NULL UNIQUE KEY,
+            label VARCHAR(100) NOT NULL UNIQUE KEY,
             type VARCHAR(100) NOT NULL,
             icon VARCHAR(100),
             PRIMARY KEY ( id )
