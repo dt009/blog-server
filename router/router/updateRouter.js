@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-27 20:49:31
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-05 10:45:27
+ * @Last Modified time: 2018-09-05 11:21:50
  */
 
 const Router = require('koa-router');
@@ -17,7 +17,7 @@ router.post('/updateRouter', async ctx => {
     let {name, path, label, icon, type, id} = ctx.request.body;
 
     try {
-        await updateRouter([name, path, label, icon, type, id]);
+        await updateRouter([name, path, label, type, icon, id]);
         ctx.body = resUtil('ok', '更新成功', {name, path, label, icon, type, id})
     } catch (error) {
         ctx.body = resUtil('fail', '更新失败', {message: error});
