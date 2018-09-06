@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-27 20:49:31
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-05 10:31:52
+ * @Last Modified time: 2018-09-06 11:21:34
  */
 
 const Router = require('koa-router');
@@ -13,7 +13,7 @@ const setRouter = require('../../sql/router/setRouter');
 const findRouter = require('../../sql/router/findRouter');
 const resUtil = require('../../utils/res_util');
 
-router.post('/setRouter', async ctx => {
+router.post('/add/router', async ctx => {
 
     let {name, path, label, icon, type} = ctx.request.body;
 

@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-27 20:49:31
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-04 12:23:32
+ * @Last Modified time: 2018-09-06 11:22:23
  */
 
 const Router = require('koa-router');
@@ -12,7 +12,7 @@ const router = new Router();
 const getRouter = require('../../sql/router/getRouter');
 const resUtil = require('../../utils/res_util');
 
-router.post('/allRouter', async ctx => {
+router.post('/get/allRouter', async ctx => {
 
     let selectData = await getRouter();
 

@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-27 20:49:31
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-05 10:56:59
+ * @Last Modified time: 2018-09-06 11:22:36
  */
 
 const Router = require('koa-router');
@@ -12,7 +12,7 @@ const router = new Router();
 const deleteRouter = require('../../sql/router/deleteRouter');
 const resUtil = require('../../utils/res_util');
 
-router.post('/deleteRouter', async ctx => {
+router.post('/delete/router', async ctx => {
 
     let {name, path, label, icon, type, id} = ctx.request.body;
 
