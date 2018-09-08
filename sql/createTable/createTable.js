@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 14:20:03
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-07 11:39:13
+ * @Last Modified time: 2018-09-08 21:45:25
  */
 
 const query = require('../utils/query');
@@ -25,9 +25,10 @@ const createTable = () => {
     let createCategoriesSql =
         `create table if not exists categories(
             id INT NOT NULL AUTO_INCREMENT,
-            code VARCHAR(20) NOT NULL,
-            name VARCHAR(20) NOT NULL,
+            code VARCHAR(20) NOT NULL UNIQUE KEY,
+            name VARCHAR(20) NOT NULL UNIQUE KEY,
             used_count INT NOT NULL,
+            description VARCHAR(1000),
             PRIMARY KEY (id)
         )`;
     query(createCategoriesSql);

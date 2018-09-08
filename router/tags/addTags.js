@@ -2,14 +2,14 @@
  * @Author: duantao-ds
  * @Date: 2018-09-06 10:51:52
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-06 11:16:30
+ * @Last Modified time: 2018-09-08 21:37:58
  */
 
 const Router = require('koa-router');
 
 const router = new Router();
 
-const setTags = require('../../sql/tags/setTags');
+const addTags = require('../../sql/tags/addTags');
 const findTags = require('../../sql/tags/findTags');
 
 const resUtil = require('../../utils/res_util');
@@ -29,7 +29,7 @@ router.post('/add/tags', async ctx => {
     }
 
     try {
-        await setTags([code, name, used_count, description]);
+        await addTags([code, name, used_count, description]);
         ctx.body = resUtil('ok', '设置成功', {code, name, used_count, description});
     } catch (error) {
         ctx.body = resUtil('fail', '设置失败', {message: error});

@@ -2,14 +2,14 @@
  * @Author: duantao-ds
  * @Date: 2018-08-27 20:49:31
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-06 11:21:34
+ * @Last Modified time: 2018-09-08 21:38:27
  */
 
 const Router = require('koa-router');
 
 const router = new Router();
 
-const setRouter = require('../../sql/router/setRouter');
+const addRouter = require('../../sql/router/addRouter');
 const findRouter = require('../../sql/router/findRouter');
 const resUtil = require('../../utils/res_util');
 
@@ -27,7 +27,7 @@ router.post('/add/router', async ctx => {
     }
 
     try {
-        await setRouter([name, path, label, type, icon,]);
+        await addRouter([name, path, label, type, icon,]);
         ctx.body = resUtil('ok', '路由设置成功', []);
     } catch (error) {
         ctx.body = resUtil('fail', '路由设置失败', {message: error});
