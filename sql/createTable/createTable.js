@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 14:20:03
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-08 21:45:25
+ * @Last Modified time: 2018-09-11 15:22:20
  */
 
 const query = require('../utils/query');
@@ -58,6 +58,21 @@ const createTable = () => {
         )`;
 
     query(createRouterSql);
+
+    // 创建 站点信息表
+    let createdWebsiteInfoSql =
+        `create table if not exists website_info(
+            id INT NOT NULL AUTO_INCREMENT,
+            userId INT NOT NULL UNIQUE KEY,
+            userName VARCHAR(100) NOT NULL UNIQUE KEY,
+            title VARCHAR(100) NOT NULL,
+            name VARCHAR(100) NOT NULL,
+            keyword VARCHAR(10000) NOT NULL,
+            contactList LONGTEXT NOT NULL,
+            PRIMARY KEY ( id )
+        )`;
+
+    query(createdWebsiteInfoSql);
 }
 
 module.exports = createTable;

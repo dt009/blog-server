@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 19:12:25
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-08-31 09:39:51
+ * @Last Modified time: 2018-09-11 16:03:54
  */
 
 const Router = require('koa-router');
@@ -13,8 +13,6 @@ const getUserInfo = require('../../sql/users/getUserInfo');
 const router = new Router();
 
 router.post('/login', async ctx => {
-
-    console.log(ctx.session);
 
     let postData = ctx.request.body;
 
