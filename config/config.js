@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 11:32:25
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-12 18:25:41
+ * @Last Modified time: 2018-09-12 18:33:55
  */
 
 const os = require('os');
@@ -15,7 +15,7 @@ let config;
 
 if (hostname === 'instance-lfnr0pzg') {
     config = {
-        serverPort: '8080',
+        serverPort: '80',
         database: {
             DATABASE: 'blog_sql',
             USERNAME: 'root',
