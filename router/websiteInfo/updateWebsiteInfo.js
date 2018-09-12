@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-09-06 11:03:31
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-11 17:51:00
+ * @Last Modified time: 2018-09-12 10:41:34
  */
 
 const Router = require('koa-router');
@@ -17,20 +17,14 @@ router.post('/update/websiteInfo', async ctx => {
 
     let {id, userId, userName, title, name, keyword, contactList} = ctx.request.body;
 
-    console.log(ctx.request.body);
-
     if (util.isArray(keyword)) {
         keyword = keyword.join('=>');
     }
-
-    console.log(keyword);
 
     if (util.isArray(contactList)) {
         let obj = {contactList};
         contactList = JSON.stringify(obj);
     }
-
-    console.log(contactList);
 
     try {
         updateWebsiteInfo([userId, userName, title, name, keyword, contactList, id]);
