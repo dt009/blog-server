@@ -2,12 +2,14 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 11:32:25
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-12 18:24:02
+ * @Last Modified time: 2018-09-12 18:25:41
  */
 
 const os = require('os');
 
-let hostname = os.hostname;
+let hostname = os.hostname();
+
+console.log('hostname ==>> ', hostname);
 
 let config;
 
