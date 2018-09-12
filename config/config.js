@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 11:32:25
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-12 15:35:40
+ * @Last Modified time: 2018-09-12 18:24:02
  */
 
 const os = require('os');
@@ -36,5 +36,7 @@ else {
         }
     }
 }
+
+console.log('config ==>> ', config);
 
 module.exports = config;
