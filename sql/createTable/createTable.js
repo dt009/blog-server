@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 14:20:03
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-11 15:22:20
+ * @Last Modified time: 2018-09-14 15:39:12
  */
 
 const query = require('../utils/query');
@@ -73,6 +73,22 @@ const createTable = () => {
         )`;
 
     query(createdWebsiteInfoSql);
+
+    let createdUserInfoSql =
+        `create table if not exists user_info(
+            id INT NOT NULL AUTO_INCREMENT,
+            userId INT NOT NULL UNIQUE KEY,
+            userName VARCHAR(100) NOT NULL UNIQUE KEY,
+            name VARCHAR(100) NOT NULL,
+            birthday VARCHAR(100) NOT NULL,
+            profession VARCHAR(100) NOT NULL,
+            education VARCHAR(100) NOT NULL,
+            contact_way LONGTEXT NOT NULL,
+            skill LONGTEXT NOT NULL,
+            PRIMARY KEY ( id )
+        )`;
+
+    query(createdUserInfoSql)
 }
 
 module.exports = createTable;
