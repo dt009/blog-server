@@ -36,7 +36,7 @@ CREATE TABLE `_mysql_session_store` (
 
 LOCK TABLES `_mysql_session_store` WRITE;
 /*!40000 ALTER TABLE `_mysql_session_store` DISABLE KEYS */;
-INSERT INTO `_mysql_session_store` VALUES ('USER_SID:-Ka8Kc8-gO3Vcki1WQwyfYNM1ySxuyHi',1536808759184,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:4TH9CyH8Sk9Bw7WcSqzgvQDcr1otjg6b',1536737596428,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:6N02n8Pv_9plBUtE5YIygfdQ1_a5v4kd',1535766688653,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:7Hy-lpZs_96GFtzgD_sn8e4i7Jkb3Msq',1535765367577,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:bGJMNjXvZ20AsMp2kkX9ujPJVTGfJpiQ',1535767726296,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:Bv3nCW3SxSnEZpGKCCJ2TE02j-utH9xr',1536742976706,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:eeCMWd8vHgr9IzK0uPOwom_TrcqUFpzX',1535767811547,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:eMIiisj5AZqcZs9gV8F37JCHyK-vuoTF',1536737357702,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:HDreULr9NnpojBMGPaFnmLlqb7I__PI1',1536745474759,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:jiTL7UU9xAPS2qN6eAQq96dyNkibkUAS',1536737523704,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:K5x4nV4G1RWOJdt_nw-qwK6OyEc6vr8w',1535772082423,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:kdGg-P3da96T_x6Cm6FFm3qmik8VXy9L',1536739014126,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:lOMPqYHLGlCMpiJ3GlhB_Sjg0Fw9xYE2',1536738022444,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:l_xjfHKVdCMq6Ex-FnHuuPf5oE3hsbe_',1535774148552,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:ma7-50sWPg5mbVv4311KdyVg3K3TWbHM',1536738909627,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:njFwcBbLl0ghluiaJFQVSacfiHn-U2cb',1536737128140,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:NQNCbpDVebgtiz1PGTuHHALm27we--qR',1535772120548,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:NVFvcTvijrq-PuSp-lLKuUrV6o1WEwWH',1535773926632,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:olEdq5PMfrhIl8o3dLSKWZO9XnVtNeCg',1535766942918,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:pL9VUU1JgwNai6j86gVWdE08OEBggL8f',1535771925776,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:qPMelSLNfbz4IWC-EkPwpzWco8zddi05',1535767803365,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:RihdffcXRruy2oiHQPvp96EC3IpS689I',1536026669612,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:s8LRVnvqaRmNis8EejAjbmRIgL4-3j2j',1535766768516,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:tRMrSznfDHDapt7x5hw3GxAgGXHObYTL',1535765169101,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:ttUDX7yhtcgwi6b3HHKJO8ctHeOsiJLJ',1535765921445,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:Ui5UD5J8xHuR3aDERCa4IsxCs0CaRpdY',1535765257785,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:VNRTdkbTn9adO2BaWDRW5qkOWLNjQMdm',1535771862282,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:VtaPBxxKordfCJbO20VIkwpDIz5l5GdF',1536737658392,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:WFcHCuKvygxV9z01YM2D9kehZS6i2XLi',1535765929940,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:x4y5tev7fML7VCTdHFWL3vWL7_02aRtY',1536805761461,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:xafs_TM0UNoWWntt5x-0O2hLdwcOcKNQ',1535765203642,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:xVbr7jfrn_FvQnmWXj6NvzeWzpZD61m-',1536805137375,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:y1yO9fd47cq_wLZlxVu8BxsgyPtMjEFC',1535772172376,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:YA8C_Mzny4jn4H0dH5EHCMlWQ9vlaeSe',1535766837062,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:ZeG_9hKRNABwILsrXSj7XR1XzetFDm1T',1536750562134,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}');
+INSERT INTO `_mysql_session_store` VALUES ('USER_SID:-Ka8Kc8-gO3Vcki1WQwyfYNM1ySxuyHi',1536808759184,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:4TH9CyH8Sk9Bw7WcSqzgvQDcr1otjg6b',1536737596428,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:4VcdLUaffEiixZAgIQ2WJ4GfBcCM5_iU',1536977281624,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:6N02n8Pv_9plBUtE5YIygfdQ1_a5v4kd',1535766688653,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:7HJR69RiC-vnmdK_uga9ogHtb52jOvKV',1536919997152,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:7Hy-lpZs_96GFtzgD_sn8e4i7Jkb3Msq',1535765367577,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:bGJMNjXvZ20AsMp2kkX9ujPJVTGfJpiQ',1535767726296,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:Bv3nCW3SxSnEZpGKCCJ2TE02j-utH9xr',1536742976706,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:cyzpKxCLj6hZsJjyuITzvknJK4uvpnar',1537408853281,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:eeCMWd8vHgr9IzK0uPOwom_TrcqUFpzX',1535767811547,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:eMIiisj5AZqcZs9gV8F37JCHyK-vuoTF',1536737357702,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:HDreULr9NnpojBMGPaFnmLlqb7I__PI1',1536745474759,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:jiTL7UU9xAPS2qN6eAQq96dyNkibkUAS',1536737523704,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:K5x4nV4G1RWOJdt_nw-qwK6OyEc6vr8w',1535772082423,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:kdGg-P3da96T_x6Cm6FFm3qmik8VXy9L',1536739014126,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:lOMPqYHLGlCMpiJ3GlhB_Sjg0Fw9xYE2',1536738022444,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:l_xjfHKVdCMq6Ex-FnHuuPf5oE3hsbe_',1535774148552,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:ma7-50sWPg5mbVv4311KdyVg3K3TWbHM',1536738909627,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:njFwcBbLl0ghluiaJFQVSacfiHn-U2cb',1536737128140,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:NQNCbpDVebgtiz1PGTuHHALm27we--qR',1535772120548,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:NVFvcTvijrq-PuSp-lLKuUrV6o1WEwWH',1535773926632,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:olEdq5PMfrhIl8o3dLSKWZO9XnVtNeCg',1535766942918,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:pL9VUU1JgwNai6j86gVWdE08OEBggL8f',1535771925776,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:qPMelSLNfbz4IWC-EkPwpzWco8zddi05',1535767803365,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:RihdffcXRruy2oiHQPvp96EC3IpS689I',1536026669612,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:s8LRVnvqaRmNis8EejAjbmRIgL4-3j2j',1535766768516,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:TPLKdNKfo9sjhZA-9dMuhKetmF9sauGn',1536906009872,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:tRMrSznfDHDapt7x5hw3GxAgGXHObYTL',1535765169101,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:ttUDX7yhtcgwi6b3HHKJO8ctHeOsiJLJ',1535765921445,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:Ui5UD5J8xHuR3aDERCa4IsxCs0CaRpdY',1535765257785,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:VNRTdkbTn9adO2BaWDRW5qkOWLNjQMdm',1535771862282,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:VtaPBxxKordfCJbO20VIkwpDIz5l5GdF',1536737658392,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:WFcHCuKvygxV9z01YM2D9kehZS6i2XLi',1535765929940,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:x4y5tev7fML7VCTdHFWL3vWL7_02aRtY',1536805761461,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:xafs_TM0UNoWWntt5x-0O2hLdwcOcKNQ',1535765203642,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:xVbr7jfrn_FvQnmWXj6NvzeWzpZD61m-',1536805137375,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:y1yO9fd47cq_wLZlxVu8BxsgyPtMjEFC',1535772172376,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:YA8C_Mzny4jn4H0dH5EHCMlWQ9vlaeSe',1535766837062,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}'),('USER_SID:ZeG_9hKRNABwILsrXSj7XR1XzetFDm1T',1536750562134,'{\"isLogin\":true,\"user\":\"dt009\",\"id\":1}');
 /*!40000 ALTER TABLE `_mysql_session_store` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -130,6 +130,40 @@ INSERT INTO `tags` VALUES (2,'test','测试',0,'这是测试用的标签');
 UNLOCK TABLES;
 
 --
+-- Table structure for table `user_info`
+--
+
+DROP TABLE IF EXISTS `user_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userId` int(11) NOT NULL,
+  `userName` varchar(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `gender` int(11) NOT NULL,
+  `birthday` varchar(100) NOT NULL,
+  `profession` varchar(100) NOT NULL,
+  `education` varchar(100) NOT NULL,
+  `contact_way` longtext NOT NULL,
+  `skill` longtext NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `userId` (`userId`),
+  UNIQUE KEY `userName` (`userName`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_info`
+--
+
+LOCK TABLES `user_info` WRITE;
+/*!40000 ALTER TABLE `user_info` DISABLE KEYS */;
+INSERT INTO `user_info` VALUES (1,1,'dt009','段涛',1,'1992-03-14','web前端开发工程师','{\"isShow\":true,\"value\":\"5\"}','{\"contact_way\":[{\"label\":\"电话\",\"isShow\":true,\"value\":\"18363625031\"},{\"label\":\"邮箱\",\"isShow\":true,\"value\":\"18363625031@163.com\"},{\"label\":\"QQ\",\"isShow\":true,\"value\":\"2276969581\"},{\"label\":\"微信\",\"isShow\":true,\"value\":\"18363625031\"}]}','{\"skill\":[{\"label\":\"HTML\",\"isShow\":true,\"value\":4.5},{\"label\":\"CSS\",\"isShow\":true,\"value\":4.5},{\"label\":\"JavaScript\",\"isShow\":true,\"value\":4.5},{\"label\":\"NodeJs\",\"isShow\":true,\"value\":3.5}]}');
+/*!40000 ALTER TABLE `user_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `users`
 --
 
@@ -183,7 +217,7 @@ CREATE TABLE `website_info` (
 
 LOCK TABLES `website_info` WRITE;
 /*!40000 ALTER TABLE `website_info` DISABLE KEYS */;
-INSERT INTO `website_info` VALUES (2,1,'dt009','段涛的博客','段涛','博客=>blog=>学习=>交流=>JS=>Web前端=>node','{\"contactList\":[{\"icon\":\"&#xe634;\",\"name\":\"微信\",\"link\":\"\",\"img\":\"http://owtyucuge.bkt.clouddn.com/weCaht.jpeg\"},{\"icon\":\"&#xe6b2;\",\"name\":\"QQ\",\"link\":\"\",\"img\":\"http://owtyucuge.bkt.clouddn.com/qq.png\"},{\"icon\":\"&#xe694;\",\"name\":\"邮箱: 18363625031@163.com\",\"link\":\"mailto:18363625031@163.com\",\"img\":\"\"},{\"icon\":\"&#xe712;\",\"name\":\"GitHub\",\"link\":\"https://github.com/dt009\",\"img\":\"\"},{\"icon\":\"&#xe60a;\",\"name\":\"CSDN 博客\",\"link\":\"https://me.csdn.net/dt_009\",\"img\":\"\"},{\"icon\":\"&#xe606;\",\"name\":\"18363625031\",\"link\":\"\",\"img\":\"\"}]}');
+INSERT INTO `website_info` VALUES (2,1,'dt009','段涛的博客','段涛','博客=>blog=>学习=>交流=>JS=>Web前端=>node','{\"contactList\":[{\"icon\":\"&#xe634;\",\"name\":\" 18363625031\",\"link\":\"\",\"img\":\"http://owtyucuge.bkt.clouddn.com/weCaht.jpeg\"},{\"icon\":\"&#xe6b2;\",\"name\":\" 2276969581\",\"link\":\"\",\"img\":\"http://owtyucuge.bkt.clouddn.com/qq.png\"},{\"icon\":\"&#xe694;\",\"name\":\"18363625031@163.com\",\"link\":\"mailto:18363625031@163.com\",\"img\":\"\"},{\"icon\":\"&#xe712;\",\"name\":\"GitHub\",\"link\":\"https://github.com/dt009\",\"img\":\"\"},{\"icon\":\"&#xe60a;\",\"name\":\"CSDN 博客\",\"link\":\"https://me.csdn.net/dt_009\",\"img\":\"\"},{\"icon\":\"&#xe606;\",\"name\":\"18363625031\",\"link\":\"\",\"img\":\"\"}]}');
 /*!40000 ALTER TABLE `website_info` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -196,4 +230,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-09-12 15:22:43
+-- Dump completed on 2018-09-19 16:48:14
