@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 14:20:03
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-14 15:39:12
+ * @Last Modified time: 2018-09-14 17:59:41
  */
 
 const query = require('../utils/query');
@@ -80,6 +80,7 @@ const createTable = () => {
             userId INT NOT NULL UNIQUE KEY,
             userName VARCHAR(100) NOT NULL UNIQUE KEY,
             name VARCHAR(100) NOT NULL,
+            gender INT NOT NULL,
             birthday VARCHAR(100) NOT NULL,
             profession VARCHAR(100) NOT NULL,
             education VARCHAR(100) NOT NULL,
