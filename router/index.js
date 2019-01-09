@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 11:40:33
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-14 16:45:26
+ * @Last Modified time: 2019-01-07 16:13:43
  */
 
 const Router = require('koa-router');
@@ -29,5 +29,11 @@ router.use('/websiteInfo', require('./websiteInfo/websiteInfo').routes());
 
 // 用户信息相关
 router.use('/userInfo', require('./userInfo/userInfo').routes());
+
+// 博客文章相关
+router.use('/article', require('./article/article').routes());
+
+// 测试 test
+router.use(require('./test').routes());
 
 module.exports = router;

@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 14:20:03
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-14 17:59:41
+ * @Last Modified time: 2019-01-09 11:53:02
  */
 
 const query = require('../utils/query');
@@ -89,7 +89,122 @@ const createTable = () => {
             PRIMARY KEY ( id )
         )`;
 
-    query(createdUserInfoSql)
+    query(createdUserInfoSql);
+
+    let createdArticleInfoSql =
+        `create table if not exists article(
+            id INT NOT NULL AUTO_INCREMENT,
+            userId INT NOT NULL ,
+            userName VARCHAR(100) NOT NULL ,
+            title VARCHAR(100) NOT NULL UNIQUE KEY,
+            filename VARCHAR(100) NOT NULL,
+            description LONGTEXT NOT NULL,
+            tags LONGTEXT NOT NULL,
+            categories LONGTEXT NOT NULL,
+            rate INT NOT NULL,
+            PRIMARY KEY ( id )
+        )`;
+
+    query(createdArticleInfoSql);
+
+
+    let createdArticleCommentSql =
+        `create table if not exists article_comment(
+            id INT NOT NULL AUTO_INCREMENT,
+            article_id INT NOT NULL UNIQUE KEY,
+            commentList LONGTEXT NOT NULL,
+            PRIMARY KEY ( id )
+        )`;
+
+    query(createdArticleCommentSql);
+
+    let createdBlogSql =
+        `create table if not exists blog (
+            id INT NOT NULL AUTO_INCREMENT,
+            title VARCHAR(100) NOT NULL UNIQUE KEY,
+            moment INT NOT NULL,
+            category INT NOT NULL UNIQUE KEY,
+            tag INT NOT NULL UNIQUE KEY,
+            context MEDIUMTEXT NOT NULL,
+            comment_count INT NOT NULL,
+            rate INT NOT NULL,
+            look_count INT NOT NULL ,
+            description TINYTEXT NULL,
+            isShow TINYINT NOT NULL ,
+            img TEXT NOT NULL,
+            PRIMARY KEY (id)
+        )`;
+
+    query(createdBlogSql);
+
+    let createdAllCategorySql =
+        `create table if not exists all_category (
+            id INT NOT NULL AUTO_INCREMENT,
+            name VARCHAR(100) NOT NULL UNIQUE KEY,
+            code VARCHAR(100) NOT NULL UNIQUE KEY,
+            moment INT NOT NULL,
+            description TINYTEXT NULL,
+            use_count INT NOT NULL,
+            PRIMARY KEY (id)
+        )`;
+    query(createdAllCategorySql);
+
+    let createdAllTagSql =
+        `create table if not exists all_tag (
+            id INT NOT NULL AUTO_INCREMENT,
+            name VARCHAR(100) NOT NULL UNIQUE KEY,
+            code VARCHAR(100) NOT NULL UNIQUE KEY,
+            moment INT NOT NULL,
+            description TINYTEXT NULL,
+            use_count INT NOT NULL,
+            PRIMARY KEY (id)
+        )`;
+    query(createdAllTagSql);
+
+    let createdTrCategoriesSql =
+        `create table if not exists tr_categories (
+            id INT NOT NULL AUTO_INCREMENT,
+            blog_id INT NOT NULL UNIQUE KEY,
+            category1 INT NULL,
+            category2 INT NULL,
+            category3 INT NULL,
+            category4 INT NULL,
+            category5 INT NULL,
+            category6 INT NULL,
+            category7 INT NULL,
+            PRIMARY KEY (id)
+        )`;
+    query(createdTrCategoriesSql);
+
+    let createdTrTagsSql =
+        `create table if not exists tr_tags (
+            id INT NOT NULL AUTO_INCREMENT,
+            blog_id INT NOT NULL UNIQUE KEY,
+            tag1 INT NULL,
+            tag2 INT NULL,
+            tag3 INT NULL,
+            tag4 INT NULL,
+            tag5 INT NULL,
+            tag6 INT NULL,
+            tag7 INT NULL,
+            PRIMARY KEY (id)
+        )`;
+    query(createdTrTagsSql);
+
+    let createdCommentSql =
+        `create table if not exists comment (
+            id INT NOT NULL AUTO_INCREMENT,
+            blog_id INT NULL,
+            comment_name VARCHAR(100) NOT NULL,
+            comment_context MEDIUMTEXT NOT NULL,
+            moment INT NOT NULL,
+            blog_rate INT NOT NULL,
+            isShow TINYINT NOT NULL,
+            PRIMARY KEY (id)
+        )`;
+    query(createdCommentSql);
+
+
 }
 
 module.exports = createTable;
