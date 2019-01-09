@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-09-06 10:51:52
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2018-09-08 21:37:58
+ * @Last Modified time: 2019-01-09 18:35:30
  */
 
 const Router = require('koa-router');
@@ -17,6 +17,8 @@ const resUtil = require('../../utils/res_util');
 router.post('/add/tags', async ctx => {
 
     let {code, name, used_count, description} = ctx.request.body;
+
+    console.log(ctx.request.body);
 
     try {
         let findRes = await findTags(code);
