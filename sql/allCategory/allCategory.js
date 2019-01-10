@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2019-01-09 16:13:08
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2019-01-10 14:59:31
+ * @Last Modified time: 2019-01-10 15:41:34
  */
 
 const query = require('../utils/query');
@@ -104,11 +104,38 @@ function deleteCategory(id) {
     return query(sql);
 }
 
+
+/**
+ * @description 更新或修改类型
+ *
+ * @param {number} id 类型标识
+ * @param {string} name 名称
+ * @param {string} code code
+ * @param {string} moment 创建时间
+ * @param {string} description 简单描述
+ * @param {number} use_count 使用次数
+ * @returns
+ */
+function updateCategory(id, name, code, moment, description, use_count) {
+
+    let sql =
+        `UPDATE all_category SET
+        name='${name}',
+        code='${code}',
+        moment='${moment}',
+        description='${description}',
+        use_count='${use_count}'
+        WHERE id=${id}`;
+
+    return query(sql);
+}
+
 module.exports = {
     getAllCategory,
     findCategory,
     addCategory,
     findNameCategory,
     findCodeCategory,
-    deleteCategory
+    deleteCategory,
+    updateCategory
 }
