@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2019-01-09 16:13:08
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2019-01-09 18:28:47
+ * @Last Modified time: 2019-01-10 11:17:26
  */
 
 const query = require('../utils/query');
@@ -39,9 +39,61 @@ function findCategory(inputValue, pageNum, pageSize, column, orderWay) {
         ORDER BY ${column} ${orderWay} LIMIT ${(pageNum - 1) * pageSize}, ${pageSize}`;
 
     return query(sql);
+};
+
+
+
+/**
+ * @description 添加新的类型
+ *
+ * @param {string} name  名称
+ * @param {string} code  code
+ * @param {string} moment 创建时间
+ * @param {string} description 简单描述
+ * @param {number} use_count 使用次数
+ * @returns
+ */
+function addCategory(name, code, moment, description, use_count) {
+
+    let sql =
+        `INSERT INTO all_category
+        (name, code, moment, description, use_count)
+        VALUES
+        ('${name}', '${code}', '${moment}', '${description}', ${use_count})`
+
+        return query(sql)
+}
+
+
+/**
+ * @description 赞找名称精确查找
+ *
+ * @param {string} name 名称
+ * @returns
+ */
+function findNameCategory(name) {
+
+    let sql = `SELECT * FROM all_category WHERE name='${name}'`;
+    return query(sql);
+}
+
+
+/**
+ * @description 按照 code 精确查找
+ *
+ * @param {string} code code
+ * @returns
+ */
+function findCodeCategory(code) {
+
+    let sql = `SELECT * FROM all_category WHERE code='${code}'`;
+    return query(sql);
 }
 
 module.exports = {
     getAllCategory,
-    findCategory
+    findCategory,
+    addCategory,
+    findNameCategory,
+    findCodeCategory
 }
