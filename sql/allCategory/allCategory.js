@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2019-01-09 16:13:08
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2019-01-10 11:17:26
+ * @Last Modified time: 2019-01-10 14:59:31
  */
 
 const query = require('../utils/query');
@@ -88,6 +88,20 @@ function findCodeCategory(code) {
 
     let sql = `SELECT * FROM all_category WHERE code='${code}'`;
     return query(sql);
+};
+
+
+/**
+ * @description 删除指定的类型
+ *
+ * @param {number} id id
+ * @returns
+ */
+function deleteCategory(id) {
+
+    let sql = `DELETE FROM all_category WHERE id=${id}`;
+
+    return query(sql);
 }
 
 module.exports = {
@@ -95,5 +109,6 @@ module.exports = {
     findCategory,
     addCategory,
     findNameCategory,
-    findCodeCategory
+    findCodeCategory,
+    deleteCategory
 }
