@@ -2,7 +2,7 @@
  * @Author: duantao-ds
  * @Date: 2018-08-24 11:40:33
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2019-01-09 18:45:13
+ * @Last Modified time: 2019-01-10 17:05:53
  */
 
 const Router = require('koa-router');
@@ -41,5 +41,9 @@ router.use(require('./test').routes());
 
 // 所有的分类
 router.use('/allCategory', require('./allCategory/allCategory').routes());
+
+// 所有的标签
+router.use('/allTag', require('./allTag/allTag').routes());
+
 
 module.exports = router;

@@ -1,32 +1,33 @@
 /*
  * @Author: duantao-ds
- * @Date: 2019-01-09 16:13:08
+ * @Date: 2019-01-10 16:38:15
  * @Last Modified by: duantao-ds
- * @Last Modified time: 2019-01-10 16:48:32
+ * @Last Modified time: 2019-01-10 16:54:18
  */
 
 const query = require('../utils/query');
 
 /**
- * @description 获得所有的类型 分页排序
+ * @description 获得所有的标签 分页排序
  * @param {number} pageNum 第几页
  * @param {number} pageSize 每一页多少条数据
  * @param {string} column 要排序的字段
  * @param {string} orderWay 排序方式
  * @returns  查询结果
  */
-function getAllCategory(pageNum, pageSize, column, orderWay) {
+function getAllTag(pageNum, pageSize, column, orderWay) {
+
     let sql =
-        `SELECT * FROM all_category
+        `SELECT * FROM all_tag
         ORDER BY ${column} ${orderWay}
         LIMIT ${(pageNum - 1) * pageSize}, ${pageSize}`;
-    return query(sql);
-};
 
+    return query(sql)
+};
 
 /**
  *
- * @description 根据用户输入查找类型
+ * @description 根据用户输入查找标签
  * @param {string} inputValue 用户输入信息
  * @param {number} pageNum 第几页
  * @param {number} pageSize 每一页多少条数据
@@ -34,16 +35,15 @@ function getAllCategory(pageNum, pageSize, column, orderWay) {
  * @param {string} orderWay 排序方式
  * @returns 查询的结果
  */
-function findCategory(inputValue, pageNum, pageSize, column, orderWay) {
+function findTag(inputValue, pageNum, pageSize, column, orderWay) {
 
     let sql =
-        `SELECT * FROM all_category
+        `SELECT * FROM all_tag
         WHERE name LIKE '%${inputValue}%' OR code LIKE '%${inputValue}%'
         ORDER BY ${column} ${orderWay} LIMIT ${(pageNum - 1) * pageSize}, ${pageSize}`;
 
     return query(sql);
 };
-
 
 /**
  * @description 赞找名称精确查找
@@ -51,9 +51,9 @@ function findCategory(inputValue, pageNum, pageSize, column, orderWay) {
  * @param {string} name 名称
  * @returns
  */
-function findNameCategory(name) {
+function findNameTag(name) {
 
-    let sql = `SELECT * FROM all_category WHERE name='${name}'`;
+    let sql = `SELECT * FROM all_tag WHERE name='${name}'`;
     return query(sql);
 }
 
@@ -64,16 +64,14 @@ function findNameCategory(name) {
  * @param {string} code code
  * @returns
  */
-function findCodeCategory(code) {
+function findCodeTag(code) {
 
-    let sql = `SELECT * FROM all_category WHERE code='${code}'`;
+    let sql = `SELECT * FROM all_tag WHERE code='${code}'`;
     return query(sql);
 };
 
-
-
 /**
- * @description 添加新的类型
+ * @description 添加新的标签
  *
  * @param {string} name  名称
  * @param {string} code  code
@@ -82,10 +80,10 @@ function findCodeCategory(code) {
  * @param {number} use_count 使用次数
  * @returns
  */
-function addCategory(name, code, moment, description, use_count) {
+function addTag(name, code, moment, description, use_count) {
 
     let sql =
-        `INSERT INTO all_category
+        `INSERT INTO all_tag
         (name, code, moment, description, use_count)
         VALUES
         ('${name}', '${code}', '${moment}', '${description}', ${use_count})`
@@ -95,25 +93,23 @@ function addCategory(name, code, moment, description, use_count) {
 
 
 
-
 /**
- * @description 删除指定的类型
+ * @description 删除指定的标签
  *
  * @param {number} id id
  * @returns
  */
-function deleteCategory(id) {
+function deleteTag(id) {
 
-    let sql = `DELETE FROM all_category WHERE id=${id}`;
+    let sql = `DELETE FROM all_Tag WHERE id=${id}`;
 
     return query(sql);
 }
 
-
 /**
- * @description 更新或修改类型
+ * @description 更新或修改标签
  *
- * @param {number} id 类型标识
+ * @param {number} id 标识
  * @param {string} name 名称
  * @param {string} code code
  * @param {string} moment 创建时间
@@ -121,10 +117,10 @@ function deleteCategory(id) {
  * @param {number} use_count 使用次数
  * @returns
  */
-function updateCategory(id, name, code, moment, description, use_count) {
+function updateTag(id, name, code, moment, description, use_count) {
 
     let sql =
-        `UPDATE all_category SET
+        `UPDATE all_tag SET
         name='${name}',
         code='${code}',
         moment='${moment}',
@@ -135,12 +131,15 @@ function updateCategory(id, name, code, moment, description, use_count) {
     return query(sql);
 }
 
+
+
+
 module.exports = {
-    getAllCategory,
-    findCategory,
-    addCategory,
-    findNameCategory,
-    findCodeCategory,
-    deleteCategory,
-    updateCategory
+    getAllTag,
+    findTag,
+    findNameTag,
+    findCodeTag,
+    addTag,
+    deleteTag,
+    updateTag
 }
